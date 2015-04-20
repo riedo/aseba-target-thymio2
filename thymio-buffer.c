@@ -140,7 +140,7 @@ void AsebaFifoCheckConnectionMode(void) {
 		fifo_reset(&AsebaFifo.tx);
 		fifo_reset(&AsebaFifo.rx);
 		connection_mode = MODE_USB;
-		reconnection_delay = RECONNECTION_DELAY;
+		reconnection_delay = RECONNECTION_DELAY;             
 		return;
 	}
 
