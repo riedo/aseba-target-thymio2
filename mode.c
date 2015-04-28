@@ -958,8 +958,8 @@ void mode_tick(void) {
 			when(buttons_state[4]) {
 				_selecting = next_mode(_selecting, 1);
 			}
-				
-			set_mode_color(_selecting);
+			if(!(rf_get_status() & RF_PAIRING_MODE))	//
+                            set_mode_color(_selecting);
 			break;
 		case MODE_FOLLOW:
 			tick_follow();

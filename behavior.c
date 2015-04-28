@@ -389,6 +389,7 @@ static void pairing_tick(void) {
 			if(dbnc == 101) {
 				if(!(rf_get_status() & RF_PAIRING_MODE)) {
 					rf_pairing_start();
+                                        leds_set_top(15,15,15);// Showing we are in pairing mode
 				}
 			}	
 			dbnc = 102;
